@@ -1,0 +1,8 @@
+{
+  "name": "Chatr",
+  "app_id": "88b8e952",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
