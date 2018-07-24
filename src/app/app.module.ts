@@ -1,35 +1,55 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+
+import { Chatr } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { MePage } from '../pages/me/me';
+import { PeoplePage } from '../pages/people/people';
+import { ChatPage } from '../pages/chat/chat';
+import { WelcomePage } from '../pages/welcome/welcome';
+import { RegisterPage } from '../pages/register/register';
+import { LoginPage } from '../pages/login/login';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    MyApp,
+    Chatr,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    MePage,
+    PeoplePage,
+    ChatPage,
+    WelcomePage,
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(Chatr)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    Chatr,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    MePage,
+    PeoplePage,
+    ChatPage,
+    WelcomePage,
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
